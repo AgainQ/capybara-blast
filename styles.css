@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playpen Sans';
+  font-size: 16px;
+  color: #36422a;
+  background-color: #ebf2e5;
+  /* height: 100vh; */
+}
+
+button {
+  border: 0px;
+}
+
+*::selection {
+  background-color: #ade1e1; /* Orange background color */
+  color: #ffffff; /* White text color */
+}
+
+.container {
+  margin: 0 auto;
+  width: 1240px;
+  height: 850px;
+  background-color: #f1f1f1;
+
+  background-image: url('img/background_3.png');
+  background-size: cover;
+}
+
+.navigation-box {
+  display: inline-flex;
+
+  align-items: center;
+  width: 1200px;
+  justify-content: space-between;
+
+  margin: 10px 20px 40px;
+  padding: 15px 20px;
+  background-color: rgb(206, 222, 189, 0.6);
+  border-radius: 20px;
+
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  justify-self: flex-end;
+}
+
+.navigation-box div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/*  Links */
+
+.nav__btn:link,
+.nav__btn:visited {
+  color: #111;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+
+  padding: 10px 30px;
+  background-color: rgba(206, 222, 189, 0.8);
+
+  border: 2px solid #000;
+  border-radius: 20px;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: ease-out;
+  transition-duration: 0.25s;
+}
+
+.nav__btn:hover {
+  background-color: #cedfbf;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav__btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.connect-btn:link,
+.connect-btn:visited {
+  display: inline-flex;
+  flex-shrink: 0;
+  min-width: 196;
+  min-height: 36;
+  background-color: #9eb384;
+}
+
+.connect-btn:hover,
+.connect-btn:active {
+  background-color: #a8bb90;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*  */
+
+.logo-img {
+  width: 70px;
+}
+
+.grid-3fr-1fr {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-box {
+  margin: 0 20px;
+}
+
+/* ### SHOP ### */
+
+.shop-box {
+  padding: 20px;
+  border-radius: 30px;
+
+  border: 2px solid #000;
+
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.shop__title {
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+
+  color: #435334;
+
+  margin-bottom: 20px;
+}
+
+.shop__items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.shop__item {
+  padding: 10px 20px;
+  background-color: rgba(250, 241, 228, 0.9);
+
+  border: 5px solid #9db385;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  transition: ease-out, 0.25s;
+}
+
+.shop__item:hover {
+  cursor: pointer;
+  /* background-color: ; */
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+
+  border: 5px solid #8ea177;
+}
+
+.shop__item:active {
+  transform: translateY(0);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bought {
+  background-color: #cedfbf;
+}
+
+.shop__item-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #435334;
+}
+
+.shop__item-description {
+  font-weight: 500;
+  color: #9eb384;
+}
+
+/* GAME */
+
+.game-area {
+  position: relative;
+}
+
+.capybara {
+  cursor: pointer;
+  width: 300px;
+
+  position: absolute;
+  left: 350px;
+  top: 350px;
+}
+
+.capybara:active {
+  width: 305px;
+  height: 305px;
+  transform: translate(-2px, -2px);
+}
+
+.score {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  color: #2d3823;
+  position: absolute;
+  left: 410px;
+  top: 20px;
+
+  padding: 30px 40px;
+  background-color: rgba(168, 187, 144, 0.815);
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+
+  /* Set a fixed width and height */
+  width: 200px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-btn {
+  width: 150px;
+  transform: rotate(23deg);
+  cursor: pointer;
+
+  position: absolute;
+  left: -10px;
+  top: -15px;
+}
+
+.reset-btn:active {
+  width: 148px;
+  transform: rotate(23deg), translate(-2px, -2px);
+}
+
+.cursor {
+  cursor: crosshair;
+}

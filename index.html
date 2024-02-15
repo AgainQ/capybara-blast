@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Capyabara Game</title>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="sth">
+
+      <div class="container">
+        <!-- ### --- NAVGIATION --- ### -->
+        <nav class="navigation-box">
+          <div>
+            <img class="logo-img" src="img/logo.png" alt="capy-logo" />
+            <a class="nav__btn" href="#">Rating</a>
+            <a class="nav__btn" href="#"> Events</a>
+          </div>
+          
+          <a class="nav__btn connect-btn" href="#">Connect Wallet</a>
+        </nav>
+        
+        <!-- ### --- MAIN-BOX --- ### -->
+        <section class="main-box">
+          <div class="game-box grid-3fr-1fr"">
+            
+            <!-- # GAME # -->
+            <div class="game-area">
+              <button> 
+                <img class="reset-btn"  src="img/reset.png" alt="reset">
+              </button>
+              <span class="score">0</span>
+              <button class="click-button">
+                <img class="capybara" src="img/capy_1.png" alt="capybara-image">
+              </button>
+            </div>
+            
+            <!-- # SHOP # -->
+            <div class="shop-box">
+              <h3 class="shop__title">Buy items</h3>
+              
+              <ul class="shop__items-list">
+                <!-- item-1 -->
+                <li class="shop__item auto-click">
+                  <p class="shop__item-name">Auto-Click</p>
+                  <p class="shop__item-description">+1 capybara per second</p>
+                </li>
+                <!-- item-2 -->
+                <li class="shop__item upgrade-cursor">
+                  <p class="shop__item-name">Upgrade Cursor</p>
+                  <p class="shop__item-description">+1 capybara per click</p>
+                </li>
+                
+                <!-- item-3 -->
+                <li class="shop__item boost">
+                  <p class="shop__item-name">Boost</p>
+                  <p class="shop__item-description">2x points for 30 seconds</p>
+                </li>
+                
+                <!-- item-4 -->
+                <li class="shop__item new-skin">
+                  <p class="shop__item-name">New Skin</p>
+                  <p class="shop__item-description">Better capybara skin</p>
+                </li>
+
+                <!-- item-5 -->
+                <li class="shop__item magic-potion">
+                  <p class="shop__item-name">Magic Potion</p>
+                  <p class="shop__item-description">It gives you super power</p>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  </body>
+  </html>
+  
